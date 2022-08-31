@@ -1,7 +1,22 @@
+.bg{
+  background-color: #fbf1e8;
+}
+
 #img-bg{
-  background-image: url('https://a-static.mlcdn.com.br/1500x1500/quadro-poster-infantil-desenho-urso-preto-e-branco-conspecto/conspecto/128753/e71ee6c0ee15b544245b6c944292fd9b.jpg');
+  background-image: url('https://i.imgur.com/1KTZ0HQ.png');
   min-height: 695px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.center {
+  position: absolute;
+  top: 10%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: black;
 }

@@ -5,6 +5,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
 
@@ -15,7 +16,8 @@ const routes: Routes = [
 {path: 'menu', component: MenuComponent},
 {path: 'rodape', component: RodapeComponent},
 
-{path: 'inicio', component: InicioComponent}
+{path: 'inicio', component: InicioComponent},
+{path: 'tema', component: TemaComponent}
 
 ];
 

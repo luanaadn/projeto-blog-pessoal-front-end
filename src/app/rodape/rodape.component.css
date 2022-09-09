@@ -11,18 +11,30 @@ ul.social-network li{
 
 .fa{
   font-size: 35pt;
-  color: white;
+  color: black;
   padding: 10px;
 }
 
 .fa-facebook-square:hover{
-  color: black;
+  color: #1877f2;
 }
 
 .fa-instagram:hover{
-  color: #C13584;
+  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fa-linkedin-square:hover{
   color: #0072b1
+}
+
+
+.bg{
+  background-color: #ebebeb;
+}
+
+.bg-copy{
+  background-color: #ebebeb;
 }

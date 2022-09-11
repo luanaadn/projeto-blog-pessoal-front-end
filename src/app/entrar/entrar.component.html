@@ -16,7 +16,7 @@
 
           <div class="form-group">
             <label for="senha">Senha</label>
-            <input [(ngModel)]='userLogin.senha' type="password" class="form-control" name="senha" id="senha"  ng-enter = "myFunction()"  placeholder="Sua senha">
+            <input [(ngModel)]='userLogin.senha' type="password" class="form-control" name="senha" id="senha" (keyup.enter)="entrar()" ng-enter = "myFunction()"  placeholder="Sua senha">
           </div>
 
           <div class="d-flex justify-content-center">

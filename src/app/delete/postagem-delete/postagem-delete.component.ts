@@ -14,33 +14,33 @@ export class PostagemDeleteComponent implements OnInit {
   postagem: Postagem = new Postagem()
   idPost: number
 
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute,
-    private postagemService: PostagemService
-  ) { }
+ constructor(
+  private router: Router,
+  private route: ActivatedRoute,
+  private postagemService: PostagemService
+ ) { }
 
-  ngOnInit(): void {
+ngOnInit(): void {
 
     window.scroll(0,0)
 
-    if (environment.token == '') {
-      this.router.navigate(['/entrar'])
+    if(environment.token == ''){
+      this.router.navigate(['/login'])
     }
-
     this.idPost = this.route.snapshot.params['id']
     this.findByIdPostagem(this.idPost)
   }
 
-  findByIdPostagem(id: number) {
-    this.postagemService.getByIdPostagem(id).subscribe((resp: Postagem) => {
+  findByIdPostagem(id: number){
+    this.postagemService.getByIdPostagem(id).subscribe((resp: Postagem)=>{
       this.postagem = resp
     })
   }
 
+
   apagar(){
     this.postagemService.deletePostagem(this.idPost).subscribe(()=>{
-      alert('Postagem apagada com sucesso!')
+      alert('postagem appagada com sucesso!')
       this.router.navigate(['/inicio'])
     })
   }
